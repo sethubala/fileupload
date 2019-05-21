@@ -1,0 +1,32 @@
+{
+  "name": "fileupload",
+  "version": "1.0",
+  "type": "flogo:activity",
+  "ref": "fileupload",
+  "description": "Simple SFTP Get/Put Method",
+  "author": "Flogo Developer", 
+  "title": "file upload test2", 
+  "inputs":[
+   
+    {
+      "name": "method",
+      "type": "string",
+      "required": false,
+      "allowed" : ["GET", "PUT","RENAME","DELETE"]
+    },
+
+    {
+      "name": "destination",
+      "type": "string",
+      "required": false
+    }
+	
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string",
+      "required": true
+    }
+  ]
+}
